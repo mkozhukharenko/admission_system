@@ -1,7 +1,8 @@
 /* FILTER */
 
 .filter{
-  min-height: 500px;
+  min-height: 400px;
   /*border: 2px solid #6e68a1; */
-  background-color: #dedfde;
+  /*background-color: #dedfde;*/
+  outline: 1px solid black;
 }

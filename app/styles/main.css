@@ -1,45 +1,8 @@
 
 
-
-
-
-/* DELETE SOME PADDING AND MARGIND*/
-.nav-left {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.content {
-  margin-right: 0;
-  padding-right: 0;
-}
-
-.nav-left {
-  margin-right: 0;
-  padding-right: 0;
-}
-.content {
-  margin-left: 0;
-  padding-left: 0;
-}
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-
 /*main-wrapper*/
 .main-wrapper {
-  max-width: 1300px;
-}
-
-
-
-
-
-.content-data {
-  min-height: 500px;
-  background-color: #ffffff;
+  max-width: 1400px;
 }
 
 

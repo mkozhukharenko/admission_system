@@ -1,31 +1,30 @@
 /*NAVIGAATION TOOOP*/
 .nav-top {
-  min-height: 50px;
-  background-color: #49428b;
-  padding-top: 10px
+  /*min-height: 50px;*/
+  /*background-color: #49428b;*/
+  /*padding-top: 10px*/
 }
 
-.nav-top .banner {
+/*.nav-top .banner {
   font-size: 18px;
   color: #fff;
-}
-.nav-top .glyphicon-cog {
+}*/
+/*.nav-top .glyphicon-cog {
   font-color:#a29ec3;
-}
+}*/
+
+
 /* SEARCH BUTTON*/
 .right-inner-addon {
     position: relative;
 }
 .right-inner-addon input {
     padding-right: 30px;
-    background-color: #9d99c0;
-    border: none;
-    height: 26px;
-    /*height: 0px;*/
+    /*border: none;*/
 }
 .right-inner-addon span {
     position: absolute;
     right: 0px;
-    padding: 5px 12px;
+    padding: 10px 12px;
     pointer-events: none;
 }
