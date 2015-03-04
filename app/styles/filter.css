@@ -8,7 +8,11 @@
   /*outline: 1px solid black;*/
 }
 
-.fa-caret-square-o-left {
+/*.fa-caret-square-o-left {
+	float: right;
+}*/
+
+.slide-left {
 	float: right;
 }
 .filter-title  span{

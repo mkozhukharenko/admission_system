@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+	<title>Вступна компанія</title>
+
+	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/filter.css">
+	<link rel="stylesheet" href="styles/content-header.css">
+	<link rel="stylesheet" href="styles/data-header.css">
+
+</head>
+<body>
+
+	<div class="container-fluid no-padding main-wrapper">
+
+		<!-- /// -->
+		<nav class="navbar navbar-default ">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav-top">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Вступна компанія</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Пропозиції <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Заяви</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Керування <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<div class="right-inner-addon">
+								<span class="glyphicon glyphicon-search"></span>
+								<input type="search" class="form-control" placeholder="Пошук"/>
+							</div>
+						</div>
+					</form>
+
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Допомога</a></li>
+						<div class="btn-group open admin">
+							<a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> Адмін</a>
+							<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="fa fa-caret-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="fa fa-cog  fa-fw"></i>Налаштування</a></li>
+									<li><a href="#"><i class="fa  fa-arrows-alt  fa-fw"></i>Вийти</a></li>
+								</ul>
+							</div>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			
+			<div class="raw content-header">
+
+				<div class="col-md-3" > 
+					<span class="content-header-title"><i class="fa fa-graduation-cap"></i> Пропозиції ВУЗу</spa>
+					</div>  
+					<div class="col-md-2 col-md-offset-7" > 
+						<a class="add-button"><i class="fa fa-plus "></i> Додати пропозицію </a>  
+					</div>  
+
+				</div>
+				<!-- main content -->     
+
+
+				<div class="raw ">
+					<!-- filter -->
+					<div class="col-sm-2 col-md-2 filter" > 
+						
+						<p class="filter-title">
+							<span >Фільтрація</span> 
+							<!-- <i class="fa fa-hand-o-left"></i> -->
+							<a href="" class="slide-left"> <i class="fa fa-caret-square-o-left"></i></a>			
+						</p>
+
+						<form class="search-around" role="form">
+							<div class="form-group">
+								<input type="search" class="form-control" id="inputSearch" placeholder="Ключове слово">
+							</div>
+							<button type="submit" class="btn  btn-sm btn-primary">Шукати</button>
+						</form>
+
+						<form class="filter-subjects" role="form">
+							<div class="form-group">
+								<label for="name">Предмет </label>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Філологія</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Математика</label>
+								</div>
+							</div>
+						</form>
+
+						<form class="filter-faculty" class="search-around" role="form">
+							<div class="form-group">
+								<label for="name">Струк. підрозділи</label>
+								<select multiple class="form-control">
+									<option>Факультет іноземних мов</option>
+									<option>Факультет кібернетики</option>
+									<option>Факультет кібернетики</option>
+									<option>Інститут прикладної фізики</option>
+									<option>Факультет лав</option>
+								</select>
+							</div>
+						</form>
+
+						<p>
+							<button type="button" class="btn btn-primary btn-sm">Оновити</button>
+							<button type="button" class="btn btn-default btn-sm">Зберегти</button>
+						</p>
+
+					</div>   
+					<!-- end filter -->
+
+
+					<div class="col-sm-10 col-md-10 content-data">
+						<div class="panel panel-default">
+							<!-- Default panel contents -->
+							<div class="panel-heading data-header">
+
+								<!-- ACRION -->
+								<div class="col-xs-3">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+											Дія
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Виділити всі</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Прибрати виділення</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Щось ще</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Інше</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+								<!-- SORTING -->
+								<div class="col-xs-3">
+									<div class="input-group">
+										<div class="input-group-btn">
+											<button tabindex="-1" class="btn btn-default" type="button">Сортувати за:</button>
+											<button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+												<span class="caret"></span>
+												<span class="sr-only">Toggle Dropdown</span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">Структурним підрозділом</a></li>
+												<li><a href="#">Напрямом навчання</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Предметом</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-2 col-xs-offset-1 ">
+									<a href="">Показано 13 з 321</a>
+								</div>
+
+								<div class="col-xs-3">
+									<ul class="pager data-navigation">
+										<li  class="disabled"><a href="#">Назад</a></li>
+										<li><a href="#">Вперед</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- Table -->
+							<table class="table table-bordered">
+								<tr>
+									<th ><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<th>Напрям</th>
+									<th>Назва</th>
+									<th>Форма</th>
+									<th>ОРК</th>
+									<th>Структурний підрозділ</th>
+									<th>Ліц. обсяг</th>
+									<th>Держ. замовл.</th>
+									<th>Терм. навч.</th>
+									<th>Дата початку</th>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>6.44.3242</td>
+									<td>філологія</td>
+									<td>Денна</td>
+									<td>Бакалавр</td>
+									<td>Факультет іноземних мов</td>
+									<td>43</td>
+									<td>0</td>
+									<td>3</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>3243.334.2</td>
+									<td>математика</td>
+									<td>Заочка</td>
+									<td>Магістр</td>
+									<td>Факультет вищої математики</td>
+									<td>54</td>
+									<td>2</td>
+									<td>4</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>223.332.4</td>
+									<td>інформатика</td>
+									<td>Вечірня</td>
+									<td>Спеціаліст</td>
+									<td>Факультет кібернетики</td>
+									<td>32</td>
+									<td>32</td>
+									<td>5</td>
+									<td>21.10.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>6.44.3242</td>
+									<td>філологія</td>
+									<td>Денна</td>
+									<td>Бакалавр</td>
+									<td>Факультет іноземних мов</td>
+									<td>43</td>
+									<td>0</td>
+									<td>3</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>3243.334.2</td>
+									<td>математика</td>
+									<td>Заочка</td>
+									<td>Магістр</td>
+									<td>Факультет вищої математики</td>
+									<td>54</td>
+									<td>2</td>
+									<td>4</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>223.332.4</td>
+									<td>інформатика</td>
+									<td>Вечірня</td>
+									<td>Спеціаліст</td>
+									<td>Факультет кібернетики</td>
+									<td>32</td>
+									<td>32</td>
+									<td>5</td>
+									<td>21.10.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>3243.334.2</td>
+									<td>математика</td>
+									<td>Заочка</td>
+									<td>Магістр</td>
+									<td>Факультет вищої математики</td>
+									<td>54</td>
+									<td>2</td>
+									<td>4</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>223.332.4</td>
+									<td>інформатика</td>
+									<td>Вечірня</td>
+									<td>Спеціаліст</td>
+									<td>Факультет кібернетики</td>
+									<td>32</td>
+									<td>32</td>
+									<td>5</td>
+									<td>21.10.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>6.44.3242</td>
+									<td>філологія</td>
+									<td>Денна</td>
+									<td>Бакалавр</td>
+									<td>Факультет іноземних мов</td>
+									<td>43</td>
+									<td>0</td>
+									<td>3</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>3243.334.2</td>
+									<td>математика</td>
+									<td>Заочка</td>
+									<td>Магістр</td>
+									<td>Факультет вищої математики</td>
+									<td>54</td>
+									<td>2</td>
+									<td>4</td>
+									<td>01.09.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>
+								<tr>
+									<th><input type="checkbox" id="inlineCheckbox1" value="option1"></label></th>
+									<td>223.332.4</td>
+									<td>інформатика</td>
+									<td>Вечірня</td>
+									<td>Спеціаліст</td>
+									<td>Факультет кібернетики</td>
+									<td>32</td>
+									<td>32</td>
+									<td>5</td>
+									<td>21.10.2015</td>
+									<th>
+										<a class="edit ml10" href="javascript:void(0)" title="Edit">'
+											<i class="glyphicon glyphicon-edit"></i>
+										</a>
+										<a class="remove ml10" href="javascript:void(0)" title="Remove">
+											<i class="glyphicon glyphicon-remove"></i>
+										</a>
+									</th>
+								</tr>							
+							</table>
+						</div>
+
+
+					</div>    
+				</div>
+
+
+
+				<div class="footer">
+				</div>
+
+
+			</div>
+
+
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<!-- build:js scripts/plugins.js -->
+			<script src="../bower_components/bootstrap/js/affix.js"></script>
+			<script src="../bower_components/bootstrap/js/alert.js"></script>
+			<script src="../bower_components/bootstrap/js/dropdown.js"></script>
+			<script src="../bower_components/bootstrap/js/tooltip.js"></script>
+			<script src="../bower_components/bootstrap/js/modal.js"></script>
+			<script src="../bower_components/bootstrap/js/transition.js"></script>
+			<script src="../bower_components/bootstrap/js/button.js"></script>
+			<script src="../bower_components/bootstrap/js/popover.js"></script>
+			<script src="../bower_components/bootstrap/js/carousel.js"></script>
+			<script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+			<script src="../bower_components/bootstrap/js/collapse.js"></script>
+			<script src="../bower_components/bootstrap/js/tab.js"></script>
+
+			<script src="scripts/main.js"></script>
+		</body>
+		</html>
