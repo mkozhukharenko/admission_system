@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+	<title>Вступна компанія</title>
+
+	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/header.css">
+
+	<!-- DELETE THIS (fron anothe page) -->
+	<link rel="stylesheet" href="styles/filter.css">
+	<link rel="stylesheet" href="styles/content-header.css">
+	<link rel="stylesheet" href="styles/data-header.css">
+	
+	<!-- new proposal styles -->
+	<link rel="stylesheet" href="styles/new-proposal.css">
+
+</head>
+<body>
+
+	<div class="container-fluid no-padding main-wrapper">
+
+		<!-- /// -->
+		<nav class="navbar navbar-default ">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav-top">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Вступна компанія</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Пропозиції <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Заяви</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Керування <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<div class="right-inner-addon">
+								<span class="glyphicon glyphicon-search"></span>
+								<input type="search" class="form-control" placeholder="Пошук"/>
+							</div>
+						</div>
+					</form>
+
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Допомога</a></li>
+						<div class="btn-group open admin">
+							<a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> Адмін</a>
+							<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="fa fa-caret-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="fa fa-cog  fa-fw"></i>Налаштування</a></li>
+									<li><a href="#"><i class="fa  fa-arrows-alt  fa-fw"></i>Вийти</a></li>
+								</ul>
+							</div>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			
+			<div class="raw content-header">
+
+				<div class="col-md-5" > 
+					
+					<span class="content-header-title"><i class="fa fa-graduation-cap"></i> Пропозиції ВУЗу</span>  	
+
+					<span class="content-header-new-proposal"><i class="fa fa-chevron-right"></i> Нова пропозиція</span>  
+
+
+				</div>
+
+			</div>
+
+
+
+			<!-- main content -->     
+			<div class="raw "> 
+				<div class="col-sm-12 col-md-12 new-proposal-wrapper" >  
+					<div class="bs-example">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#sectionA">Загальні відомості</a></li>
+							<li><a data-toggle="tab" href="#sectionB">Предмети</a></li>
+							<li><a data-toggle="tab" href="#sectionС">Квоти</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="sectionA" class="tab-pane fade in active">
+								<div class="col-xs-8	">
+									<h3>Загальні відомості</h3>
+
+									<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+									<form id="movieForm" method="post">
+
+										<div class="form-group">
+											<div class="row">
+
+												<div class="col-xs-8">
+													<label class="control-label">Назва</label>
+													<input type="text" class="form-control" name="title" />
+												</div>
+
+												<div class="col-xs-4 selectContainer">
+													<label class="control-label">Структурний підрозділ</label>
+													<select class="form-control" name="genre">
+														<option value="">Додати безпосередньо до НЗ</option>
+														<option value="action">Інше</option>
+														<option value="comedy">Інше</option>
+														<option value="horror">Інше</option>
+														<option value="romance">Інше</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-3">
+													<label class="control-label">Форма навчання</label>
+													<select class="form-control" name="genre">
+														<option value="">Денна</option>
+														<option value="action">Інше</option>
+														<option value="comedy">Інше</option>
+														<option value="horror">Інше</option>
+														<option value="romance">Інше</option>
+													</select>
+												</div>
+
+												<div class="col-xs-9">
+													<label class="control-label">Кваліфікаційний рівень</label>
+													<select class="form-control" name="genre">
+														<option value="">Маолодший спеціаліст на базі загальної середньої освіти</option>
+														<option value="action">Інше</option>
+														<option value="comedy">Інше</option>
+														<option value="horror">Інше</option>
+														<option value="romance">Інше</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+
+												<div class="col-xs-2">
+													<label class="control-label">Курс зарах</label>
+													<select class="form-control" name="genre">
+														<option value="">1</option>
+														<option value="action">2</option>
+														<option value="comedy">3</option>
+														<option value="horror">4</option>
+														<option value="romance">5</option>
+													</select>
+												</div>
+
+												<div class="col-xs-8">
+													<label class="control-label">Термін навчання</label>
+													<div class="raw"></div>
+													<div class="col-xs-6">
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="кількість років" aria-describedby="basic-addon2">
+															<span class="input-group-addon" id="basic-addon2">років</span>
+														</div>
+													</div>
+													<div class="col-xs-6">
+
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="кількість місяців" aria-describedby="basic-addon2">
+															<span class="input-group-addon" id="basic-addon2">місяців</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-2">
+													<label class="control-label">Друга вища</label>
+													<select class="form-control" name="genre">
+														<option value="">ні</option>
+														<option value="action">так</option>
+
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+
+												<div class="col-xs-6">
+													<label class="control-label">Дата початку навчання</label>
+													<input type="datetime" class="form-control" name="title" />
+												</div>
+												<div class="col-xs-6">
+													<label class="control-label">Дата закінчення навчання</label>
+													<input type="datetime" class="form-control" name="title" />
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="row">
+
+												<div class="col-xs-4">
+													<label class="control-label">Код напрямку\спеціальності</label>
+													<div class="input-group">
+														<input type="text" class="form-control" placeholder="Search&hellip;">
+														<span class="input-group-btn">
+															<button type="button" class="btn btn-default">Знайти</button>
+														</span>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<!-- TABLE WITH SPECIALIZATION -->
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>Код напряму</th>
+													<th>Напрям</th>
+													<th>Код спеціальності</th>
+													<th>Спеціальність</th>
+													<th>Спеціалізація</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>333.55</td>
+													<td>геодезія</td>
+													<td>3.553.3112</td>
+													<td>геодезія геодезична</td>
+													<td>таємна геодезія</td>
+												</tr>
+											</tbody>
+										</table>
+										
+										<div class="form-group">
+											<div class="row">
+
+												<div class="col-xs-3">
+													<label class="control-label">Держзамовлення</label>
+													<input type="text" class="form-control" name="title" />
+												</div>
+												<div class="col-xs-3">
+													<label class="control-label">Ліцензійний обсяг </label>
+													<input type="text" class="form-control" name="title" />
+												</div>
+												<div class="col-xs-3">
+													<label class="control-label">Держзамовлення (попередні набори)</label>
+													<input type="text" class="form-control" name="title" />
+												</div>
+												<div class="col-xs-3">
+													<label class="control-label">Ліцензійний обсяг (попередні набори)</label>
+													<input type="text" class="form-control" name="title" />
+												</div>
+
+											</div>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Зберегти</button>
+										<button type="submit" class="btn btn-primary">Далі</button>
+									</form>
+
+								</div>
+								<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
+							</div>
+							<div id="sectionB" class="tab-pane fade">
+								<h3>Предмети пропозиції</h3>
+								<a class="add-subjects-button"><i class="fa fa-plus "></i> Додати предмет </a>  
+
+								<!-- MODEL FOR WUBJECT -->
+								<div id="subject-modal" class="modal fade">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<h4 class="modal-title">Додати новий предмет до пропозиції</h4>
+											</div>
+
+
+											<div class="modal-body">
+												<form class="form-horizontal">
+													<div class="form-group">
+
+
+														<label for="inputEmail" class="control-label col-xs-2">Предмет</label>
+														<div class="col-xs-10">
+															<select class="form-control" name="genre">
+																<option value="">Географія</option>
+																<option value="action">Математика</option>
+																<option value="comedy">Іноземна мова</option>
+																<option value="horror">Фізика</option>
+																<option value="romance">Хімія</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+
+														<div class="col-xs-2"> </div>
+														<div class="col-xs-10">
+															<div class="checkbox-inline">
+																<label><input type="checkbox"> Профільний</label>
+															</div>		
+															<div class="checkbox-inline">
+																<label><input type="checkbox"> Обов'язковий</label>
+															</div>	
+														</div>
+													</div>
+
+
+													<div class="form-group">
+														<label for="inputEmail" class="control-label col-xs-2">Додаткова назва</label>
+														<div class="col-xs-10">
+															<input type="text" class="form-control" id="inputEmail" placeholder="додаткова назва">
+														</div>
+													</div>
+												</form>
+
+
+											</div>
+
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>
+												<button type="button" class="btn btn-primary">Зберегти зміни</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- </div> -->
+
+
+
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Id</th>
+											<th>#</th>
+											<th>Назва предмету</th>
+											<th>додаткова назва</th>
+											<th>Деталізація</th>
+											<th>Профільний</th>
+											<th>Обов*язковий</th>
+											<th>Коефіцієнт</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>213542</td>
+											<td>23</td>
+											<td>Географія</td>
+											<td></td>
+											<td>дуже важливо!</td>
+											<td>так</td>
+											<td>так</td>
+											<td>1</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="sectionС" class="tab-pane fade">
+
+								<h3>Квоти</h3>
+								<a class="add-quota-button"><i class="fa fa-plus "></i> Додати квоту </a>
+								<!-- TABLE WITH quotas -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Тип</th>
+											<th>Кількість</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>32.755</td>
+											<td>сільська місцевість</td>
+											<td>12</td>
+
+										</tr>
+									</tbody>
+								</table>
+
+								<!-- quota-modal -->
+								<!-- MODEL FOR WUBJECT -->
+								<div id="quota-modal" class="modal fade">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<h4 class="modal-title">Додати нову квоту</h4>
+											</div>
+
+
+											<div class="modal-body">
+												<form class="form-horizontal">
+
+													<div class="form-group">
+														<label for="inputEmail" class="control-label col-xs-2">Тип</label>
+														<div class="col-xs-10">
+															<input type="text" class="form-control" id="inputType" placeholder="тип">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputEmail" class="control-label col-xs-2">Кількість мість</label>
+														<div class="col-xs-10">
+															<input type="text" class="form-control" id="inputType" placeholder="кількість">
+														</div>
+													</div>
+
+												</form>
+
+											</div>
+
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>
+												<button type="button" class="btn btn-primary">Зберегти зміни</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="footer">
+			</div>
+
+
+		</div>
+
+
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<!-- build:js scripts/plugins.js -->
+		<script src="../bower_components/bootstrap/js/affix.js"></script>
+		<script src="../bower_components/bootstrap/js/alert.js"></script>
+		<script src="../bower_components/bootstrap/js/dropdown.js"></script>
+		<script src="../bower_components/bootstrap/js/tooltip.js"></script>
+		<script src="../bower_components/bootstrap/js/modal.js"></script>
+		<script src="../bower_components/bootstrap/js/transition.js"></script>
+		<script src="../bower_components/bootstrap/js/button.js"></script>
+		<script src="../bower_components/bootstrap/js/popover.js"></script>
+		<script src="../bower_components/bootstrap/js/carousel.js"></script>
+		<script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+		<script src="../bower_components/bootstrap/js/collapse.js"></script>
+		<script src="../bower_components/bootstrap/js/tab.js"></script>
+
+		<script src="scripts/main.js"></script>
+	</body>
+	</html>

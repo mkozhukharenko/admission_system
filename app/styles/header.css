@@ -2,7 +2,9 @@
 .nav-top {
 
 }
-
+.main-wrapper > .navbar{
+  /*margin-bottom: 10px;*/
+}
 
 /* SEARCH BUTTON*/
 .right-inner-addon {
