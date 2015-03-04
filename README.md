@@ -21,12 +21,12 @@ npm install
 ###Possible improvements
 
 Next improvement can be made to this repository:
-+ colorize layouts (I like smth like [this][1] )
++ colorize layouts (smth like [this][1] )
 + make forms look better (good examples [here][2]  - check  the last answer)
 + animate column with filter  (show\hide by click) 
 + add drop-down menu.
 
-first mockups version is here:: [main page][4], [drop-down menu][5], [add new proposal page][6]
+first mockups version is here: [main page][4], [drop-down menu][5], [add new proposal page][6]
 
 ###Official documenation
 
