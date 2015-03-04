@@ -1,17 +1,7 @@
 /*NAVIGAATION TOOOP*/
 .nav-top {
-  /*min-height: 50px;*/
-  /*background-color: #49428b;*/
-  /*padding-top: 10px*/
-}
 
-/*.nav-top .banner {
-  font-size: 18px;
-  color: #fff;
-}*/
-/*.nav-top .glyphicon-cog {
-  font-color:#a29ec3;
-}*/
+}
 
 
 /* SEARCH BUTTON*/
@@ -27,4 +17,8 @@
     right: 0px;
     padding: 10px 12px;
     pointer-events: none;
+}
+
+.admin {
+  margin-top: 5px;
 }
