@@ -5,43 +5,177 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
-    <title>Admission System</title>
+    <title>Вступна компанія</title>
+    
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/filter.css">
+    <link rel="stylesheet" href="styles/drop-down-menu.css">
+    <link rel="stylesheet" href="styles/content-header.css">
 
   </head>
   <body>
+    
+    <div class="container-fluid no-padding main-wrapper">
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">admission system</h3>
-      </div>
+      <!-- header -->
+      <div class="header nav-top">
+        <div class="col-md-2 banner-wrapper">
+          <span class="banner">Вступна компанія</span>
+        </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+        <div class="col-md-2 ">
+          <div class="right-inner-addon">
+              <span class="glyphicon glyphicon-search"></span>
+              <input type="search" class="form-control" placeholder="Пошук"/>
+           </div>
+        </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+        <div class="col-md-2 col-md-offset-6 settings">
+          
+          <!-- admin drop-down -->
+          <div class="btn-group open admin">
+            <a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> Адмін</a>
+            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="fa fa-caret-down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-cog  fa-fw"></i>Налаштування</a></li>
+              <li><a href="#"><i class="fa  fa-arrows-alt  fa-fw"></i>Вийти</a></li>
+            </ul>
+          </div>
+          <!-- END dmin drop-down -->
         </div>
       </div>
+      <!-- end header -->
+      
+     <!-- button menu -->
+      <div class="raw button-header">
+        <div class="col-md-2 nav-left" >
+          <div class="raw drop-menu ">
+            <i class="fa fa-bars"></i>
+            <span class="menu-title">Меню</span>
+          </div>
+        </div>   
+        
+        <div class="col-md-10 content-header">
+            <div class="col-md-3">
+              <span><i class="fa fa-graduation-cap"></i> Пропозиції ВУЗу</span>  
+            </div>
+
+            <div class="col-md-2 col-md-offset-1">
+              <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-plus"></span>Додати пропозицію 
+              </a>
+            </div>
+
+
+            
+        </div>    
+      </div>
+      <!-- end button menu -->
+
+      <!-- main content -->
+        
+        <div class="raw no-gutters">
+
+        <!-- filter -->
+          <div class="col-md-2 filter" > </div>   
+        <!-- end filter -->
+        
+
+        <div class="col-md-10 content">
+              <table class="table table-bordered">
+                <tr>
+                    <th>Напрям</th>
+                    <th>Назва</th>
+                    <th>Форма</th>
+                    <th>ОРК</th>
+                    <th>Структурний підрозділ</th>
+                    <th>Ліцензійний обсяг</th>
+                    <th>Держзамовлення</th>
+                    <th>Термін навчання</th>
+                    <th>Дата початку</th>
+                </tr>
+                <tr>
+                    <td>6.44.3242</td>
+                    <td>філологія</td>
+                    <td>Денна</td>
+                    <td>Бакалавр</td>
+                    <td>Факультет іноземних мов</td>
+                    <td>43</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>01.09.2015</td>
+                </tr>
+                <tr>
+                    <td>3243.334.2</td>
+                    <td>математика</td>
+                    <td>Заочка</td>
+                    <td>Магістр</td>
+                    <td>Факультет вищої математики</td>
+                    <td>54</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>01.09.2015</td>
+                </tr>
+                <tr>
+                    <td>223.332.4</td>
+                    <td>інформатика</td>
+                    <td>Вечірня</td>
+                    <td>Спеціаліст</td>
+                    <td>Факультет кібернетики</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>5</td>
+                    <td>21.10.2015</td>
+                </tr>
+                <tr>
+                    <td>6.44.3242</td>
+                    <td>філологія</td>
+                    <td>Денна</td>
+                    <td>Бакалавр</td>
+                    <td>Факультет іноземних мов</td>
+                    <td>43</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>01.09.2015</td>
+                </tr>
+                <tr>
+                    <td>3243.334.2</td>
+                    <td>математика</td>
+                    <td>Заочка</td>
+                    <td>Магістр</td>
+                    <td>Факультет вищої математики</td>
+                    <td>54</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>01.09.2015</td>
+                </tr>
+                <tr>
+                    <td>223.332.4</td>
+                    <td>інформатика</td>
+                    <td>Вечірня</td>
+                    <td>Спеціаліст</td>
+                    <td>Факультет кібернетики</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>5</td>
+                    <td>21.10.2015</td>
+                </tr>
+              </table>
+        </div>    
+      </div>
+     <!-- end main content -->
+
+
 
       <div class="footer">
-        <p>♥ from the Yeoman team</p>
       </div>
+
+
     </div>
 
  

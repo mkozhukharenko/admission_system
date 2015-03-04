@@ -1,0 +1,27 @@
+/* DATA WITH IT"S HEADER */
+.content-header {
+  min-height: 60px;
+  
+  padding-top: 10px;
+  /*padding-bottom: 10px;*/
+}
+
+.content-header {
+	background-color: #eeeeee;
+}
+
+.button-header {
+	min-height: 60px;
+}
+
+.admin {
+	float: right;
+}
+
+
+.content-header .fa-graduation-cap {
+	color: #7f3232;
+}
+.content-header span {
+	font-size: 20px;
+}
